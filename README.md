@@ -1,2 +1,2 @@
 # CrymeClarity-Notebooks
-Notebooks for the CrymeClarity Application.
+Notebooks for the CrymeClarity Application. (https://github.com/bwhitesell/CrymeClarity)
