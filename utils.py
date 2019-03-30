@@ -87,4 +87,7 @@ def rdd_to_df(rdd):
 
 
 def cla_timestamp_to_datetime(cla_ts):
-    return datetime.datetime.strptime(cla_ts, '%Y-%m-%dT%H:%M:%S.%f')
+    try:
+        return datetime.datetime.strptime(cla_ts, '%Y-%m-%dT%H:%M:%S.%f')
+    except ValueError:
+        return datetime.datetime(year=1, month=1, day=1)
